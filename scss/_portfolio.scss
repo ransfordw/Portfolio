@@ -25,64 +25,150 @@ Portfolio Section
 
 }
 
+// // Styling for the portfolio section
+// .portfolio-box {
+//     position: relative;
+//     display: block;
+//     width: 100%;
+//     margin: 0 ;
+//     .portfolio-box-caption {
+//       position: absolute;
+//       bottom: 0;
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       text-align: center;
+//       opacity: 0;
+//       color: $white;
+//       background: fade-out(rgba(110,153,196,0.9), .1);
+//       .portfolio-box-caption-content {
+//         position: absolute;
+//         top: 50%;
+//         width: 100%;
+//         transform: translateY(-50%);
+//         text-align: center;
+//         .project-category,
+//         .project-name {
+//           padding: 0 15px;
+//         }
+//         .project-category {
+//           font-size: 14px;
+//           font-weight: 600;
+//           text-transform: uppercase;
+//         }
+//         .project-name {
+//           font-size: 18px;
+//         }
+//       }
+//     }
+//     &:hover {
+//       .portfolio-box-caption {
+//         opacity: 1;
+//       }
+//     }
+//     &:focus {
+//       outline: none;
+//     }
+//     @media (min-width: 768px) {
+//       .portfolio-box-caption {
+//         .portfolio-box-caption-content {
+//           .project-category {
+//             font-size: 16px;
+//           }
+//           .project-name {
+//             font-size: 22px;
+//           }
+//         }
+//       }
+//     }
+//   }
 // Styling for the portfolio section
 .portfolio-box {
-    position: relative;
+  position: relative;
+  display: block;
+  min-width: 100px;
+  max-width: 650px;
+  margin: 0 auto;  
+  .portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
     display: block;
     width: 100%;
-    margin: 0 ;
-    .portfolio-box-caption {
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: $white;
+    background: fade-out(rgba(139, 163, 187, 0.9), .1);
+    // @include transition-all;
+    .portfolio-box-caption-content {
       position: absolute;
-      bottom: 0;
-      display: block;
+      top: 50%;
       width: 100%;
-      height: 100%;
+      transform: translateY(-50%);
       text-align: center;
-      opacity: 0;
-      color: $white;
-      background: fade-out(rgba(110,153,196,0.9), .1);
+      .project-category,
+      .project-name {
+        padding: 0 15px;
+        // @include sans-serif-font;
+      }
+      .project-category {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .project-name {
+        font-size: 18px;
+      }
+    }
+  }
+  &:hover {
+    .portfolio-box-caption {
+      opacity: 1;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  @media (min-width: 768px) {
+    .portfolio-box-caption {
       .portfolio-box-caption-content {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        transform: translateY(-50%);
-        text-align: center;
-        .project-category,
-        .project-name {
-          padding: 0 15px;
-        }
         .project-category {
-          font-size: 14px;
-          font-weight: 600;
-          text-transform: uppercase;
+          font-size: 16px;
         }
         .project-name {
-          font-size: 18px;
-        }
-      }
-    }
-    &:hover {
-      .portfolio-box-caption {
-        opacity: 1;
-      }
-    }
-    &:focus {
-      outline: none;
-    }
-    @media (min-width: 768px) {
-      .portfolio-box-caption {
-        .portfolio-box-caption-content {
-          .project-category {
-            font-size: 16px;
-          }
-          .project-name {
-            font-size: 22px;
-          }
+          font-size: 22px;
         }
       }
     }
   }
+}
   
+.projectGrid{
+  padding: 0;
+  margin: 0 auto;
+  img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+  @media(max-width:300px){
+    img{
+      width: 100%;
+    }
+  }
+  .row {
+    margin:0;
+    .col-lg-4,.col-sm-12{
+      padding:0;
+    }
+  }
+  
+}
+
+.portfolio-box .porfolio-box-caption {
+  background: rgba(139, 163, 187, 0.9);
+}
+
   .projectSection {
     margin: 0;
     color: $tan;
@@ -168,19 +254,4 @@ Portfolio Section
     margin: 25px;
 }
 
-.projectGrid {
-  img {
-    max-width: 525px;
-    max-height: 450px;
-    object-fit: fill;
-  }
-}
 
-.portfolio-box .porfolio-box-caption {
-  background: rgba(110,153,196, 0.9);
-}
-
-.img-fluid {
-  width:535px;
-  height: 350px;
-}

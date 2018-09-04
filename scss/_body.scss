@@ -2,9 +2,12 @@
 /****************************
 Body Section
 ****************************/
-body {
+body, html{
     background: url("/assets/img/dark_trees_road.jpg") fixed no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    min-width: 100vw;
 }
 
 .collapsible {
