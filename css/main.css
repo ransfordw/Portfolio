@@ -1,0 +1,389 @@
+/* Variables used throughout will go here. */
+/****************************
+Body Section
+****************************/
+body {
+  background: url("/assets/img/dark_trees_road.jpg") fixed no-repeat;
+  background-size: 100%; }
+
+.collapsible {
+  background-color: #eee;
+  cursor: cursor;
+  padding: 18px;
+  width: 30%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  display: inline-block; }
+
+.active, .collapsible:hover {
+  background-color: #ccc; }
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 30%; }
+
+.flex-box {
+  display: flex;
+  text-align: center; }
+
+/* ------------------------------
+Navbar Section
+--------------------------------*/
+/* Variables used throughout will go here. */
+.navbar {
+  margin-bottom: 0px;
+  width: 100%; }
+
+.navbar li {
+  display: inline-block;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em; }
+
+.navbar ul {
+  width: 100%; }
+
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: #fff; }
+
+.nav-item {
+  flex-grow: 1;
+  transition: all .3s ease-in-out; }
+
+.nav-item:hover {
+  transform: scale(1.6); }
+
+.nav-item a {
+  text-decoration: none;
+  color: royalblue; }
+
+/* CSS code for the Header section. */
+.jumbotron {
+  color: #C77E32;
+  background: transparent; }
+
+.jumbotron-fluid h1 {
+  text-align: right; }
+
+.container {
+  padding-top: 3em; }
+
+.mastheadText {
+  padding-top: 0em;
+  text-shadow: 2px 2px 2px #ffffff; }
+
+.lead {
+  text-align: right;
+  color: #FFC587;
+  float: right;
+  margin-top: -5px; }
+
+/* ------------------------------
+Portfolio Section
+--------------------------------*/
+.portfolio {
+  background-color: #47569A;
+  width: 100%;
+  display: inline-block; }
+
+.interests {
+  border: 1px #1B296C;
+  background-color: #E19E57;
+  width: 100%; }
+
+.projects {
+  display: inline-block;
+  margin-left: 3em;
+  margin-bottom: 3em;
+  width: 15em;
+  height: 15em;
+  object-fit: fill;
+  padding: 6em; }
+
+.projectOne {
+  background-image: url(/assets/img/robot4.jpg); }
+
+.projectTwo {
+  background-image: url(/assets/img/robot3.jpg);
+  overflow: hidden; }
+
+.projectThree {
+  background-image: url(/assets/img/robot2.jpg);
+  overflow: hidden; }
+
+.projectFour {
+  background-image: url(/assets/img/robot1.jpg);
+  overflow: hidden; }
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto; }
+  .portfolio-box .portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(240, 95, 64, 0.9); }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        padding: 0 15px; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 18px; }
+  .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1; }
+  .portfolio-box:focus {
+    outline: none; }
+  @media (min-width: 768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+      font-size: 16px; }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+      font-size: 22px; } }
+
+.projectSection {
+  margin: 0;
+  color: #f4dec9; }
+
+.section-heading {
+  font: 3em bold;
+  font-family: sans-serif; }
+
+.gallery {
+  text-align: center;
+  padding: 50px; }
+  .gallery figure {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    font-size: 0;
+    overflow: hidden;
+    max-width: 200px;
+    max-height: 200px; }
+    .gallery figure figcaption {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      max-height: 100%;
+      padding: 15px;
+      text-align: left;
+      font-size: 1rem;
+      opacity: 0;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch; }
+      .gallery figure figcaption::-webkit-scrollbar {
+        width: 4px; }
+      .gallery figure figcaption::-webkit-scrollbar-track {
+        background: transparent; }
+      .gallery figure figcaption::-webkit-scrollbar-thumb {
+        background: #bbb; }
+      .gallery figure figcaption::-webkit-scrollbar-thumb:hover {
+        background: #999; }
+    .gallery figure img {
+      max-width: 300px;
+      max-height: 200px; }
+    .gallery figure:hover figcaption {
+      opacity: 1; }
+    .gallery figure:hover img {
+      filter: blur(2px) saturate(2) opacity(0.9); }
+
+projectSection.ie .gallery figure:hover::after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75); }
+
+projectSection.ie .gallery figure:hover figcaption {
+  z-index: 2;
+  color: #fff; }
+
+.img0 {
+  margin-left: -50%; }
+
+.img2 {
+  margin-left: -30%; }
+
+.img3 {
+  margin-left: -40%; }
+
+.figure {
+  position: relative;
+  display: inline-block;
+  max-width: 275px;
+  margin: 25px; }
+
+/****************************
+About Section
+****************************/
+.about {
+  background-color: #25924A;
+  width: 100%; }
+
+p {
+  color: #2F3F88; }
+
+.aboutSection {
+  background: #6e99c4; }
+
+/* CSS code for the Contact section. */
+/* CSS code for the Footer section. */
+.footer {
+  color: #47569A; }
+
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #F05F40; }
+
+hr.light {
+  border-color: #fff; }
+
+a {
+  color: #F05F40;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+  a:hover {
+    color: #f05f40; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+
+.bg-primary {
+  background-color: #F05F40 !important; }
+
+.bg-dark {
+  background-color: #212529 !important; }
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7); }
+
+section {
+  padding: 8rem 0; }
+
+.section-heading {
+  margin-top: 0; }
+
+::-moz-selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none; }
+
+::selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none; }
+
+img::selection {
+  color: #fff;
+  background: transparent; }
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent; }
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../assets/img/ransfordCarnie.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header.masthead hr {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  header.masthead h1 {
+    font-size: 5em;
+    color: black;
+    max-width: 35em; }
+  header.masthead h3 {
+    color: #363535;
+    max-width: 30em;
+    text-align: right;
+    overflow-wrap: normal; }
+  header.masthead p {
+    font-weight: 300; }
+  @media (min-width: 768px) {
+    header.masthead p {
+      font-size: 1.15rem; } }
+  @media (min-width: 992px) {
+    header.masthead {
+      height: 100vh;
+      min-height: 650px;
+      padding-top: 0;
+      padding-bottom: 0; }
+      header.masthead h1 {
+        font-size: 3rem; } }
+  @media (min-width: 1200px) {
+    header.masthead h1 {
+      font-size: 4rem; } }
+
+#myName {
+  font-size: 26pts; }
+
+.service-box {
+  max-width: 400px; }
+
+.text-primary {
+  color: #F05F40 !important; }
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+
+.btn-xl {
+  padding: 1rem 2rem; }
+
+.btn-primary {
+  background-color: #F05F40;
+  border-color: #F05F40; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: #fff;
+    background-color: #ee4b28 !important; }
+  .btn-primary:active, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }

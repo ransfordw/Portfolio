@@ -1,0 +1,24 @@
+/* CSS code for the Header section. */
+.jumbotron {
+    color: $primary-color-dark;
+    background: transparent;
+}
+.jumbotron-fluid h1{
+text-align: right;
+}
+
+.container {
+    padding-top: 3em;
+}
+
+.mastheadText {
+    padding-top: 0em;
+    text-shadow: 2px 2px 2px #ffffff;
+}
+
+.lead {
+    text-align: right;
+color: $primary-color-light;
+float: right;
+margin-top: -5px;
+}
