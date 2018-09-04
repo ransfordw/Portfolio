@@ -105,21 +105,6 @@ Portfolio Section
   object-fit: fill;
   padding: 6em; }
 
-.projectOne {
-  background-image: url(/assets/img/robot4.jpg); }
-
-.projectTwo {
-  background-image: url(/assets/img/robot3.jpg);
-  overflow: hidden; }
-
-.projectThree {
-  background-image: url(/assets/img/robot2.jpg);
-  overflow: hidden; }
-
-.projectFour {
-  background-image: url(/assets/img/robot1.jpg);
-  overflow: hidden; }
-
 .portfolio-box {
   position: relative;
   display: block;
@@ -134,7 +119,7 @@ Portfolio Section
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: rgba(240, 95, 64, 0.9); }
+    background: rgba(110, 153, 196, 0.8); }
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
       position: absolute;
       top: 50%;
@@ -238,6 +223,14 @@ projectSection.ie .gallery figure:hover figcaption {
   display: inline-block;
   max-width: 275px;
   margin: 25px; }
+
+.projectGrid img {
+  max-width: 635px;
+  max-height: 450px;
+  object-fit: fill; }
+
+.portfolio-box .porfolio-box-caption {
+  background: rgba(110, 153, 196, 0.9); }
 
 /****************************
 About Section
@@ -387,3 +380,15 @@ header.masthead {
     background-color: #ee4b28 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
+
+.resumeSection {
+  color: #f4dec9;
+  text-align: center; }
+
+.resume-button {
+  color: #6e99c4;
+  transition: all .3s ease-in-out; }
+
+.resume-button:hover {
+  transform: scale(1.6);
+  color: #c4896e; }

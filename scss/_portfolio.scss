@@ -25,27 +25,6 @@ Portfolio Section
 
 }
 
-.projectOne {
-    background-image: url(/assets/img/robot4.jpg);
-    //overflow: hidden;
-}
-
-.projectTwo {
-    background-image: url(/assets/img/robot3.jpg);
-    overflow: hidden;
-}
-
-.projectThree {
-    background-image: url(/assets/img/robot2.jpg);
-    overflow: hidden;
-}
-
-.projectFour {
-    background-image:  url(/assets/img/robot1.jpg);
-    overflow: hidden;
-}
-
-
 // Styling for the portfolio section
 .portfolio-box {
     position: relative;
@@ -61,7 +40,7 @@ Portfolio Section
       text-align: center;
       opacity: 0;
       color: $white;
-      background: fade-out($primary, .1);
+      background: fade-out(rgba(110,153,196,0.9), .1);
       .portfolio-box-caption-content {
         position: absolute;
         top: 50%;
@@ -147,7 +126,6 @@ Portfolio Section
       img {
         max-width: 300px;
         max-height: 200px;
-         
       }
       &:hover {
         figcaption { opacity: 1; }
@@ -187,4 +165,16 @@ Portfolio Section
     display: inline-block;
     max-width: 275px;
     margin: 25px;
+}
+
+.projectGrid {
+  img {
+    max-width: 635px;
+    max-height: 450px;
+    object-fit: fill;
+  }
+}
+
+.portfolio-box .porfolio-box-caption {
+  background: rgba(110,153,196, 0.9);
 }
