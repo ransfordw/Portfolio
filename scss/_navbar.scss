@@ -9,12 +9,11 @@ Navbar Section
 }
 .navbar li{
     display: inline-block;
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
 }
 
 .navbar ul{
    width: 100%;
+   margin-bottom: 0;
 }
 // Styling for the navbar
 #mainNav {
@@ -31,4 +30,10 @@ Navbar Section
 .nav-item a{
     text-decoration: none;
     color: royalblue;
+}
+
+.flex-box {
+    display: flex;
+    text-align: center;
+    line-height: 72px;
 }

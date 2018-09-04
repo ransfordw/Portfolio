@@ -40,12 +40,11 @@ Navbar Section
   width: 100%; }
 
 .navbar li {
-  display: inline-block;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em; }
+  display: inline-block; }
 
 .navbar ul {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 0; }
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -62,6 +61,11 @@ Navbar Section
   text-decoration: none;
   color: royalblue; }
 
+.flex-box {
+  display: flex;
+  text-align: center;
+  line-height: 72px; }
+
 /* CSS code for the Header section. */
 .jumbotron {
   color: #C77E32;
@@ -75,7 +79,7 @@ Navbar Section
 
 .mastheadText {
   padding-top: 0em;
-  text-shadow: 2px 2px 2px #ffffff; }
+  text-shadow: 2px 2px 2px black; }
 
 .lead {
   text-align: right;
@@ -108,8 +112,8 @@ Portfolio Section
 .portfolio-box {
   position: relative;
   display: block;
-  max-width: 650px;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 0; }
   .portfolio-box .portfolio-box-caption {
     position: absolute;
     bottom: 0;
@@ -147,7 +151,7 @@ Portfolio Section
 
 .projectSection {
   margin: 0;
-  color: #f4dec9; }
+  color: #f5dfca; }
 
 .section-heading {
   font: 3em bold;
@@ -176,6 +180,7 @@ Portfolio Section
       padding: 15px;
       text-align: left;
       font-size: 1rem;
+      text-shadow: 2px 2px 2px black;
       opacity: 0;
       overflow: auto;
       -webkit-overflow-scrolling: touch; }
@@ -193,7 +198,7 @@ Portfolio Section
     .gallery figure:hover figcaption {
       opacity: 1; }
     .gallery figure:hover img {
-      filter: blur(2px) saturate(2) opacity(0.9); }
+      filter: blur(7px) saturate(0) opacity(0.9); }
 
 projectSection.ie .gallery figure:hover::after {
   content: '';
@@ -225,12 +230,16 @@ projectSection.ie .gallery figure:hover figcaption {
   margin: 25px; }
 
 .projectGrid img {
-  max-width: 635px;
+  max-width: 525px;
   max-height: 450px;
   object-fit: fill; }
 
 .portfolio-box .porfolio-box-caption {
   background: rgba(110, 153, 196, 0.9); }
+
+.img-fluid {
+  width: 535px;
+  height: 350px; }
 
 /****************************
 About Section
@@ -246,6 +255,9 @@ p {
   background: #6e99c4; }
 
 /* CSS code for the Contact section. */
+label {
+  color: #f5dfca; }
+
 /* CSS code for the Footer section. */
 .footer {
   color: #47569A; }
@@ -329,10 +341,10 @@ header.masthead {
     margin-bottom: 30px; }
   header.masthead h1 {
     font-size: 5em;
-    color: black;
+    color: white;
     max-width: 35em; }
   header.masthead h3 {
-    color: #363535;
+    color: #dfdfdf;
     max-width: 30em;
     text-align: right;
     overflow-wrap: normal; }

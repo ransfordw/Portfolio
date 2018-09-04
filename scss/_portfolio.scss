@@ -29,8 +29,8 @@ Portfolio Section
 .portfolio-box {
     position: relative;
     display: block;
-    max-width: 650px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 ;
     .portfolio-box-caption {
       position: absolute;
       bottom: 0;
@@ -85,7 +85,7 @@ Portfolio Section
   
   .projectSection {
     margin: 0;
-    color: rgb(244,222,201);
+    color: $tan;
   }
   
   .section-heading {
@@ -115,6 +115,7 @@ Portfolio Section
         padding: 15px;
         text-align: left;
         font-size: 1rem;
+        text-shadow: 2px 2px 2px black;
         opacity: 0;
         overflow: auto;
         -webkit-overflow-scrolling: touch;
@@ -129,7 +130,7 @@ Portfolio Section
       }
       &:hover {
         figcaption { opacity: 1; }
-        img { filter: blur(2px)saturate(2) opacity(0.9); }
+        img { filter: blur(7px) saturate(0)opacity(0.9); }
       }
     }
   }
@@ -169,7 +170,7 @@ Portfolio Section
 
 .projectGrid {
   img {
-    max-width: 635px;
+    max-width: 525px;
     max-height: 450px;
     object-fit: fill;
   }
@@ -177,4 +178,9 @@ Portfolio Section
 
 .portfolio-box .porfolio-box-caption {
   background: rgba(110,153,196, 0.9);
+}
+
+.img-fluid {
+  width:535px;
+  height: 350px;
 }
