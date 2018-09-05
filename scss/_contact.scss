@@ -14,12 +14,13 @@ label {
 }
 
 .contactButton {
-    button{
-        width: 50px;
-        height: 50px;
-    }
     img{
         object-fit: fill;
         overflow: hidden;
+        width: 30px;
+        height: 30px;
+    }
+    li {
+        padding-right: 63px;
     }
 }
