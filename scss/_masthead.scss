@@ -4,7 +4,7 @@ header.masthead {
     padding-bottom: calc(10rem - 56px);
     background-image: url("../assets/img/ransfordCarnie.jpg");
     background-position: center center;
-    width: 100vw;
+    width: 100%;
     @include background-cover;
     hr {
       margin-top: 30px;

@@ -3,11 +3,10 @@
 Body Section
 ****************************/
 body, html {
-  background: url("../assets/img/dark_trees_road.jpg") fixed no-repeat;
+  background: url("../assets/img/dark_trees_road.jpg") fixed no-repeat center;
   background-size: cover;
-  background-position: center;
   height: 100%;
-  min-width: 100vw; }
+  min-width: 98vw; }
 
 .collapsible {
   background-color: #eee;
@@ -40,7 +39,8 @@ Navbar Section
 /* Variables used throughout will go here. */
 .navbar {
   margin-bottom: 0px;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 .navbar li {
   display: inline-block; }
@@ -287,7 +287,8 @@ label {
 
 /* CSS code for the Footer section. */
 .footer {
-  color: #47569A; }
+  color: #f5dfca;
+  text-align: right; }
 
 hr {
   max-width: 50px;
@@ -351,7 +352,7 @@ header.masthead {
   padding-bottom: calc(10rem - 56px);
   background-image: url("../assets/img/ransfordCarnie.jpg");
   background-position: center center;
-  width: 100vw;
+  width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -387,9 +388,6 @@ header.masthead {
 
 #myName {
   font-size: 26pts; }
-
-.service-box {
-  max-width: 400px; }
 
 .text-primary {
   color: #F05F40 !important; }
