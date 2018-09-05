@@ -3,7 +3,7 @@
 Body Section
 ****************************/
 body, html {
-  background: url("/assets/img/dark_trees_road.jpg") fixed no-repeat;
+  background: url("../assets/img/dark_trees_road.jpg") fixed no-repeat;
   background-size: cover;
   background-position: center;
   height: 100%;
