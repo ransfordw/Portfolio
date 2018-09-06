@@ -47,7 +47,8 @@ Navbar Section
 
 .navbar ul {
   width: 100%;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding: 0; }
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -250,6 +251,10 @@ projectSection.ie .gallery figure:hover figcaption {
   display: inline-block;
   max-width: 275px;
   margin: 25px; }
+
+.projectHeading {
+  padding: 60px;
+  padding-bottom: 0; }
 
 /****************************
 About Section
