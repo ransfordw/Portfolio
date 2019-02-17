@@ -55,8 +55,10 @@ Navbar Section
   background-color: #fff; }
 
 .nav-item {
-  flex-grow: 1;
-  transition: all .3s ease-in-out; }
+  flex-grow: 0.75;
+  transition: all .3s ease-in-out; 
+  font-size: 18pt;
+}
 
 .nav-item:hover {
   transform: scale(1.6); }
@@ -117,7 +119,7 @@ Portfolio Section
   position: relative;
   display: block;
   min-width: 100px;
-  max-width: 650px;
+  max-width: 450px;
   margin: 0 auto; }
   .portfolio-box .portfolio-box-caption {
     position: absolute;
@@ -158,14 +160,16 @@ Portfolio Section
   padding: 0;
   margin: 0 auto; }
   .projectGrid img {
-    width: 100%;
+    width: 450px;
     height: 450px;
+    border-radius: 10%;
     object-fit: cover; }
   @media (max-width: 300px) {
     .projectGrid img {
       width: 100%; } }
   .projectGrid .row {
-    margin: 0; }
+    margin: 0; 
+  }
     .projectGrid .row .col-lg-4, .projectGrid .row .col-sm-12 {
       padding: 0; }
 
@@ -196,12 +200,12 @@ Portfolio Section
     .gallery figure figcaption {
       position: absolute;
       top: 50%;
-      left: 0;
+      /* left: 0; */
       transform: translateY(-50%);
       width: 100%;
       max-height: 100%;
       padding: 15px;
-      text-align: left;
+      text-align: center;
       font-size: 1rem;
       text-shadow: 2px 2px 2px black;
       opacity: 0;
@@ -222,6 +226,7 @@ Portfolio Section
       opacity: 1; }
     .gallery figure:hover img {
       filter: blur(7px) saturate(0) opacity(0.9); }
+      
 
 projectSection.ie .gallery figure:hover::after {
   content: '';
@@ -237,20 +242,12 @@ projectSection.ie .gallery figure:hover figcaption {
   z-index: 2;
   color: #fff; }
 
-.img0 {
-  margin-left: -50%; }
-
-.img2 {
-  margin-left: -30%; }
-
-.img3 {
-  margin-left: -40%; }
-
 .figure {
   position: relative;
   display: inline-block;
   max-width: 275px;
-  margin: 25px; }
+  margin: 25px;
+ }
 
 .projectHeading {
   padding: 60px;
@@ -267,11 +264,34 @@ p {
   color: #2F3F88; }
 
 .aboutSection {
-  background: #6e99c4; }
+  background: #6e99c4; 
+}
+
+.about-content {
+  font-size: 13pt;
+}
+
+.about-me {
+  font-size: 13.6pt;
+  color: rgb(248, 255, 241);
+}
 
 /* CSS code for the Contact section. */
 label {
   color: #f5dfca; }
+
+#Contact{
+  margin-top: 16em;
+  margin-bottom: 6em;
+}
+
+#Projects {
+  margin-top: 8em;
+}
+
+#Interests {
+  margin-top: 8em;
+}
 
 .contactPhoto img {
   width: 350px;
@@ -307,7 +327,9 @@ a {
   color: #F05F40;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  scroll-behavior: smooth;
+}
   a:hover {
     color: #f05f40; }
 
@@ -329,7 +351,7 @@ h6 {
   color: rgba(255, 255, 255, 0.7); }
 
 section {
-  padding: 8rem 0; }
+  padding: 1.5em; }
 
 .section-heading {
   margin-top: 0; }
@@ -417,6 +439,7 @@ header.masthead {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
 
 .resumeSection {
+  margin-top: 2em;
   color: #f4dec9;
   text-align: center; }
 
@@ -427,3 +450,17 @@ header.masthead {
 .resume-button:hover {
   transform: scale(1.6);
   color: #c4896e; }
+
+  .img0 {
+    margin-left: -50%; }
+  
+  .img2 {
+    margin-left: -30%; }
+  
+  .img3 {
+    margin-left: -40%; }
+
+    .img4:hover{
+      filter: blur(7px) saturate(5) opacity(0.9);
+      box-shadow: 0 0 1px #47569A;
+    }
